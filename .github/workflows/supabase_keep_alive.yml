@@ -14,8 +14,8 @@ jobs:
         env:
           # ここにあなたのSupabase URLとKeyを設定するか、GitHub Secretsを使用してください
           # 今回は簡単にするため、直接書き込む方法で案内しますが、本来はSecretsが推奨です
-          SUPABASE_URL: 'https://xmtvogvhcvaeozgebjxx.supabase.co'
-          SUPABASE_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhtdHZvZ3ZoY3ZhZW96Z2Vianh4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ3MjkzODUsImV4cCI6MjA4MDMwNTM4NX0.Tdo8GINengPpqr6R-rROY7omSAd_bQs9gyNQi1X8Oew'
+          SUPABASE_URL: 'https://tbwmukqsnlvokogtqooc.supabase.co'
+          SUPABASE_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRid211a3Fzbmx2b2tvZ3Rxb29jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyNTcwMDcsImV4cCI6MjA4OTgzMzAwN30.pfNNZtWZEFwDEv6mlsk_90nAiumQHcL_Qt4lKmqu0rM'
         run: |
           # クライアントテーブルを1行だけ取得する軽いリクエストを送ってDBを起こす
           curl -f -X GET "$SUPABASE_URL/rest/v1/clients?select=count" \
