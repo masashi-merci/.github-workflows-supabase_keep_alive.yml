@@ -4,7 +4,7 @@ on:
   schedule:
     # 毎日 UTC 0:00 (日本時間 9:00) に実行
     - cron: '0 0 * * *'
-  workflow_dispatch: # 手動実行も可能にする
+  workflow_dispatch: # 手動実行も可能にす
 
 jobs:
   ping_supabase:
